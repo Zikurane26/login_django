@@ -1,0 +1,22 @@
+#Crear enviroment 
+python3 -m venv venv
+#Activar el enviroment y en windows
+source venv/bin/activate
+#Instalar django
+pip install django
+#Desactivar el enviroment
+deactivate
+#Crear proyecto de django
+django-admin startproject mysite
+#Correr el servidor
+python manage.py runserver
+#Crear una app
+python manage.py startapp nombre_app
+#Crear migraciones
+python manage.py makemigrations
+#Aplicar migraciones
+python manage.py migrate
+#Crear superusuario
+python manage.py createsuperuser
+#Correr el servidor
+python manage.py runserver
