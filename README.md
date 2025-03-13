@@ -63,6 +63,12 @@ OBSERVACIONES PERTINENTES:
    - Se contemplaron medidas para la seguridad de la API, como la correcta configuración de CORS y la recomendación de encriptar 
      contraseñas.
 
+EJECUCIÓN:
+----------
+1. **Instalación de modulos:**
+   - Ejecutar npm install dentro de la carpeta login.front para cargar las librerias en package.json
+   - Crear en entorno con python -m venv venv para ejecutar el servidor con python manage.py runserver
+
 CONCLUSIÓN:
 -----------
 Este sistema integra una solución completa para la gestión de beneficiarios y chalecos, con un backend robusto en Django y 
