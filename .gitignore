@@ -1,0 +1,33 @@
+# Entorno virtual
+venv/
+ENV/
+env/
+.env/
+.venv/
+env.bak/
+venv.bak/
+
+# Archivos y directorios generados por Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de log
+*.log
+
+# Base de datos SQLite (si la usas en desarrollo)
+db.sqlite3
+
+# Archivos temporales y de backup
+*.bak
+*.swp
+
+# Archivos de configuración local (IDE, editor, etc.)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
