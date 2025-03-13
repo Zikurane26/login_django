@@ -1,0 +1,156 @@
+:root {
+  /* Colores base */
+  --color-primary: #004AAD;  /* Azul UNP */
+  --color-secondary: #F5F6F7; 
+  --color-text: #333333;
+  --color-texthover: #677483; 
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* Tipografía */
+  --font-family: 'Open Sans', Arial, sans-serif;
+  --font-size-base: 16px;
+  --font-size-title: 1.5rem;    /* 24px */
+  --font-size-subtitle: 1.25rem; /* 20px */
+
+  /* Espaciados */
+  --spacing-sm: 0.5rem;  /* 8px */
+  --spacing-md: 1rem;    /* 16px */
+  --spacing-lg: 1.5rem;  /* 24px */
+
+  /* Bordes */
+  --border-radius: 4px;
+}
+
+/* Body base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background-color: var(--color-white);
+}
+
+/* Encabezado principal */
+.header-unp {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-unp .logo-unp {
+  display: flex;
+  align-items: center;
+}
+
+.header-unp .logo-unp img {
+  height: 40px; /* Ajusta según tu logo */
+  margin-right: var(--spacing-md);
+}
+
+.header-unp {
+  color: var(--color-text);
+  margin-right: var(--spacing-md);
+  text-decoration: none;
+  font-weight: 600;
+}
+/* Estilo para los enlaces del nav */
+.nav-link{
+  color: var(--color-text);
+  margin: 0 var(--spacing-md);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: var(--font-size-base);
+  transition: color 0.3s ease;
+}
+.nav-unp {
+  padding: 10px;
+}
+.nav-unp a:hover {
+  color: var(--color-texthover);
+  text-decoration: underline;
+}
+
+/* Estilo para el botón de cierre de sesión en el nav */
+
+
+.logout-btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+/* Título principal */
+.title-unp {
+  font-size: var(--font-size-title);
+  margin-bottom: var(--spacing-md);
+  font-weight: bold;
+}
+
+/* Subtítulo */
+.subtitle-unp {
+  font-size: var(--font-size-subtitle);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Botones */
+.btn-unp {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-unp:hover {
+  background-color: #00308F; /* Un tono más oscuro */
+}
+
+/* Contenedores principales */
+.container-unp {
+  padding: var(--spacing-md);
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Form */
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 95%;
+  padding: var(--spacing-sm);
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+/* Tarjetas o secciones */
+.card-unp {
+  background-color: var(--color-white);
+  border: 1px solid #eaeaea;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Footer o pie de página */
+.footer-unp {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
