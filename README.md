@@ -27,7 +27,6 @@ ARQUITECTURA:
       • Endpoints adicionales para filtrar beneficiarios (por cédula o nombre) e incluir la cantidad de chalecos.
       • Endpoint de login que valida credenciales contra la tabla "Usuarios".
   - Consideraciones de seguridad:
-      • Se recomienda encriptar las contraseñas (uso de `make_password` y `check_password`).
       • Se configuró CORS mediante `django-cors-headers` para permitir solicitudes desde el frontend.
 
 - **Frontend (React con Vite):**
@@ -39,11 +38,6 @@ ARQUITECTURA:
   - Navegación:
       • Se implementó un menú de navegación (con enlaces) en la parte superior de la aplicación para cambiar entre 
         BeneficiariosCRUD, ChalecosCRUD y FiltrarChalecos sin perder la sesión.
-  - Integración con librerías:
-      • Se realizaron cambios en las rutas de importación para usar componentes de la librería "react-ecosistema-unp":
-          - `AuthProvider`, `ProtectedRoute` y `UserRoute` se usan para la gestión de autenticación y rutas protegidas.
-          - Componentes de UI (por ejemplo, `VentanaLienzo`, `VentanaTabs`, `Subtitulo`, `Tarjeta` y `TablaRegistros`) 
-            se integraron para mantener la identidad visual institucional.
 
 OBSERVACIONES PERTINENTES:
 ---------------------------
@@ -58,8 +52,7 @@ OBSERVACIONES PERTINENTES:
    - Se implementaron serializers personalizados para incluir en la respuesta la lista (o conteo) de chalecos asociados.
 
 3. **Interfaz de Usuario:**
-   - La UI se adapta a los colores y estilo institucional, utilizando componentes importados de "react-ecosistema-unp" 
-     (por ejemplo, para ventanas, tarjetas y tablas).
+   - La UI se adapta a los colores y estilo institucional
    - Se incorporó un menú de navegación en la parte superior para cambiar entre las distintas secciones sin afectar la sesión 
      del usuario.
 
