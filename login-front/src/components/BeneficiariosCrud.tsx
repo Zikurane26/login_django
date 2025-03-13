@@ -1,4 +1,3 @@
-// src/components/BeneficiariosCRUD.tsx
 import React, { useEffect, useState, ChangeEvent, FormEvent } from 'react';
 
 
@@ -10,7 +9,7 @@ interface Beneficiario {
 }
 
 interface FormData {
-  cedula: string; // como valor de input, se maneja como string y luego puedes convertirlo si es necesario
+  cedula: string; 
   nombre: string;
   direccion: string;
   poblacion: string;
@@ -44,7 +43,6 @@ const BeneficiariosCRUD: React.FC = () => {
   // Tipar el evento del formulario
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Si es necesario, convierte formData.cedula a número
     const response = await fetch('http://127.0.0.1:8000/api/beneficiarios/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -59,8 +57,6 @@ const BeneficiariosCRUD: React.FC = () => {
   return (
     <div className="container-unp" style={{ marginTop: '20px' }}>
       <h2 className="title-unp">Beneficiarios</h2>
-  
-      {/* Tarjeta para crear un beneficiario */}
       <div className="card-unp">
         <h3 className="subtitle-unp">Crear Beneficiario</h3>
         <form onSubmit={handleSubmit}>

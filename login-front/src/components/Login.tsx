@@ -12,9 +12,6 @@ const Login: React.FC<LoginProps> = ({ setIsAuthenticated }) => {
   const navigate = useNavigate();
 
   const handleLogin = async (e: FormEvent<HTMLFormElement>) => {
-    //Imprime en consola los valores de username y password
-    console.log(username);
-    console.log(password);
     e.preventDefault();
     try {
       const response = await fetch('http://127.0.0.1:8000/api/login/', {

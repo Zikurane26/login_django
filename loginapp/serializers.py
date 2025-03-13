@@ -4,18 +4,15 @@ from .models import Beneficiarios, Chalecos
 class BeneficiariosSerializer(serializers.ModelSerializer):
     class Meta:
         model = Beneficiarios
-        fields = '__all__'  # Incluye todos los campos
+        fields = '__all__'  
 
 class ChalecosSerializer(serializers.ModelSerializer):
-    #beneficiario_cedula = serializers.PrimaryKeyRelatedField(queryset=Beneficiarios.objects.all())
-
     class Meta:
         model = Chalecos
         fields = '__all__'
 
 class BeneficiarioConChalecosSerializer(serializers.ModelSerializer):
-    chalecos = serializers.SerializerMethodField()  # Nuevo campo para chalecos
-
+    chalecos = serializers.SerializerMethodField()  
     class Meta:
         model = Beneficiarios
         fields = ['cedula', 'nombre', 'chalecos']

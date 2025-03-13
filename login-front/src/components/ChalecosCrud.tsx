@@ -1,4 +1,3 @@
-// src/components/ChalecosCRUD.tsx
 import React, { useEffect, useState, ChangeEvent, FormEvent } from 'react';
 
 interface Chaleco {
@@ -39,7 +38,7 @@ const ChalecosCRUD: React.FC = () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         serial: parseInt(formData.serial),
-        beneficiario_cedula: parseInt(formData.beneficiario) // Asegúrate de enviar un número
+        beneficiario_cedula: parseInt(formData.beneficiario)
       })
     });
     if (response.ok) {
@@ -51,7 +50,6 @@ const ChalecosCRUD: React.FC = () => {
   return (
     <div className="container-unp" style={{ marginTop: '20px' }}>
       <h2 className="title-unp">Chalecos</h2>
-      
       {/* Tarjeta para crear un chaleco */}
       <div className="card-unp">
         <h3 className="subtitle-unp">Crear Chaleco</h3>

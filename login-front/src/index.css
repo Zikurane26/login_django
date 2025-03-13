@@ -47,11 +47,6 @@ body {
   align-items: center;
 }
 
-.header-unp .logo-unp img {
-  height: 40px; /* Ajusta según tu logo */
-  margin-right: var(--spacing-md);
-}
-
 .header-unp {
   color: var(--color-text);
   margin-right: var(--spacing-md);
@@ -76,7 +71,6 @@ body {
 }
 
 /* Estilo para el botón de cierre de sesión en el nav */
-
 
 .logout-btn:hover {
   background-color: var(--color-white);

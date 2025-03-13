@@ -8,8 +8,8 @@ import {
   Link,
 } from "react-router-dom";
 import Login from "./components/Login";
-import BeneficiariosCRUD from "./components/BeneficiariosCRUD";
-import ChalecosCRUD from "./components/ChalecosCRUD";
+import BeneficiariosCRUD from "./components/BeneficiariosCrud";
+import ChalecosCRUD from "./components/ChalecosCrud";
 import FiltrarChalecos from "./components/FiltrarChalecos";
 
 interface PrivateRouteProps {

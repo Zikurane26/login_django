@@ -1,4 +1,3 @@
-// src/components/FiltrarChalecos.tsx
 import React, { useState, ChangeEvent } from 'react';
 
 interface Beneficiario {
